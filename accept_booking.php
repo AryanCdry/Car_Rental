@@ -10,7 +10,6 @@ if (!$conn) {
     die("Connection failed: ");
 }
 
-
 $booking_id = $_GET['id'];
 
 $sql = "UPDATE bookings SET status='accepted' WHERE id='$booking_id'";
